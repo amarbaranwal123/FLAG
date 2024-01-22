@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Happy Republic Day</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -27,7 +28,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 1%;
+  padding: 3%;
 }
 
 #myBtn {
@@ -49,6 +50,25 @@ body {
   bottom: 8px;
   right: 16px;
 }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  body,video {
+    width: 100%;
+    padding: 0;
+  }
+  .content{
+  padding: 7%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  body,video {
+    width: 100%;
+  }
+  .content{
+  padding: 7%;
+  }
+}
 </style>
 </head>
 <body>
@@ -58,26 +78,13 @@ body {
     Your browser does not support the audio element.
 </audio>
 <video autoplay muted loop id="myVideo">
-  <source src="flag.mp4" type="video/mp4">
+  <source src="Flag.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 <div class="content">
-  <img src="KIPI_LOGO.png" alt="KIPI.BI" class="bottom-right"><br>
-  <button id="myBtn" onclick="myFunction()">Audio Play</button>
+  <img src="KIPI_Logo.png" alt="KIPI.BI" class="bottom-right"><br>
 </div>
-
-<script>
-var video = document.getElementById("myVideo");
-var audioElement = new Audio("abc.mp3");
-
-var btn = document.getElementById("myBtn");
-function myFunction() {
-  audioElement.play();
-}
-
-
-</script>
-
+  
 </body>
 </html>

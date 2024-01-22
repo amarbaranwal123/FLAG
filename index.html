@@ -3,12 +3,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-  <title>Happy Independence Day</title>
+  <title>Happy Republic Day</title>
   <style>
-    /* Your provided CSS styles here */
+      /* Your provided CSS styles here */
     body {
       margin: 0;
       padding: 0;
+	  width:100%
       font-family: Arial, sans-serif;
       background-image: url("bg.jpg"); /* Replace with your background image URL */
       background-size: cover;
@@ -16,7 +17,8 @@
       background-attachment: fixed;
     }
 	h1{
-		font-family: 'Lobster';font-size: 30px;
+		font-family: 'Lobster';
+		
 	}
     p {
       margin-top: 10px;
@@ -47,6 +49,7 @@
   position: absolute;
   top: 8px;
   left: 16px;
+  font-size :80%;
 }
 h1 {
     animation: 40s multicolor;
@@ -87,13 +90,34 @@ h1 {
         background: green;
     }
 }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .top-left {
+    width: 90%;
+    padding: 0;
+	font-size :80%;
+  }
+  body{
+  background-image: url("bg_res.jpg");
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  top-left {
+    width: 90%;
+	font-size :80%;
+  }
+  body{
+  background-image: url("bg_res.jpg");
+  }
+}
   </style>
 </head>
 <body>
  <div class="top-left">
 	<center>
-	<img src="KIPI_LOGO.png" alt="KIPI.BI" >
-	<h1>Dear Kipians,<br>Separated by various locations,United under the banner of Kipi.This Republic Day, let's come together to hoist our flag to honor the principles of democracy, equality, and justice. Just as our nation, we breathe the same culture and take pride in considering both India and Kipi our home. Wishing everyone a Republic Day filled with pride and prosperity!.<br> Wishing you a very Happy Republic day!.<br> Hoist the flag high with us.</h1>
+	<img src="KIPI_Logo.png" alt="KIPI.BI" >
+	<h1><br>Separated by various locations,United under the banner of Kipi.<br>This Republic Day, let's come together to hoist our flag to honor the principles of democracy, equality, and justice. Just as our nation, we breathe the same culture and take pride in considering both India and Kipi our home. <br>Wishing everyone a Republic Day filled with pride and prosperity!.<br> Wishing you a very Happy Republic day!.<br> Hoist the flag high with us.</h1>
     <a href="flag1.html"><button id="myBtn">Hoist Flag</button></a></center>
  </div>
 </body>
