@@ -28,7 +28,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 1%;
+  padding: 3%;
 }
 
 #myBtn {
@@ -49,6 +49,25 @@ body {
   position: absolute;
   bottom: 8px;
   right: 16px;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  body,video {
+    width: 100%;
+    padding: 0;
+  }
+  .content{
+  padding: 7%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  body,video {
+    width: 100%;
+  }
+  .content{
+  padding: 7%;
+  }
 }
 </style>
 </head>
